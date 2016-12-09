@@ -1,4 +1,5 @@
 // src/components/App/index.js
+
 import React, { PropTypes, Component } from 'react';
 import classnames from 'classnames';
 
@@ -6,9 +7,6 @@ import logo from './logo.svg';
 import './style.css';
 
 class App extends Component {
-  // static propTypes = {}
-  // static defaultProps = {}
-  // state = {}
 
   render() {
     const { className, ...props } = this.props;

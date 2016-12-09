@@ -9,5 +9,5 @@ import './index.css';
 
 ReactDOM.render(
   <Routes history={browserHistory} />,
-  document.getElementById('root'),
+  document.getElementById('root')
 );
