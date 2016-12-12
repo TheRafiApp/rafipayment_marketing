@@ -1,0 +1,44 @@
+.color-success {
+  color: #45c97a; }
+
+.color-bg-success {
+  background-color: #45c97a; }
+
+.color-neutral {
+  color: #00b1ba; }
+
+.color-bg-neutral {
+  color: #fff;
+  background-color: #00b1ba; }
+
+.color-warning {
+  color: #f7d114; }
+
+.color-bg-warning {
+  background-color: #f7d114; }
+
+.color-error {
+  color: #e91e63; }
+
+.color-bg-error {
+  color: #fff;
+  background-color: #e91e63; }
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.8em;
+  line-height: 1em;
+  color: #808080;
+  background: #3d586f; }
+  body.loading:before {
+    z-index: 9999; }
+  body.loading:after {
+    z-index: 999999; }
+
+a {
+  color: #008087;
+  text-decoration: none; }
+  a:hover {
+    color: #00e2ed; }
+  a:visited {
+    color: #008087; }

@@ -1,0 +1,33 @@
+@import 'colors';
+
+// Global
+body {
+  font-family: 'Roboto', sans-serif;
+  // font-weight: 400;
+  font-size: 0.8em;
+  line-height: 1em;
+  color: $color-grey-60;
+  background: #3d586f;
+
+  &.loading {
+    &:before {
+      z-index: 9999;
+    }
+    &:after {
+      z-index: 999999;
+    }
+  }
+}
+
+a {
+  color: darken($color-highlight, 10%);
+  text-decoration: none;
+
+  &:hover {
+    color: lighten($color-highlight, 10%);
+  }
+
+  &:visited {
+    color: darken($color-highlight, 10%);
+  }
+}

@@ -5,18 +5,20 @@ import classnames from 'classnames';
 import './style.css';
 
 export default class About extends Component {
-  // static propTypes = {}
-  // static defaultProps = {}
-  // state = {}
+  componentDidMount() {
+    document.title = "Help | Rafi Payment";
+  }
 
   render() {
     const { className, ...props } = this.props;
 
     return (
       <div className={classnames('Help', className)}>
-        <h1>
-          Help
-        </h1>
+        <div className="container">
+          <div className="copy">
+            <h1>This is the help page</h1>
+          </div>
+        </div>
       </div>
     );
   }

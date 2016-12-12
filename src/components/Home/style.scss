@@ -1,13 +1,19 @@
 .Home {
-  position: relative;
-  height: 100vh;
-  z-index: 1;
-  background-image: url('../../images/bg.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
+  .upper {
+    position: relative;
+    height: 100vh;
+    z-index: 1;
+    background-image: url('../../images/bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
 
-  color: white;
+    color: white;
+
+    .btn.btn-secondary {
+      color: #333;
+    }
+  }
 }
 
 .copy {
@@ -15,4 +21,9 @@
   top: calc(50vh - 80px);
   right: 0;
   text-align: right;
+
+  h1 {
+    font-size: 3em;
+    line-height: 1.4em;
+  }
 }

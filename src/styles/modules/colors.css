@@ -1,0 +1,25 @@
+.color-success {
+  color: #45c97a; }
+
+.color-bg-success {
+  background-color: #45c97a; }
+
+.color-neutral {
+  color: #00b1ba; }
+
+.color-bg-neutral {
+  color: #fff;
+  background-color: #00b1ba; }
+
+.color-warning {
+  color: #f7d114; }
+
+.color-bg-warning {
+  background-color: #f7d114; }
+
+.color-error {
+  color: #e91e63; }
+
+.color-bg-error {
+  color: #fff;
+  background-color: #e91e63; }

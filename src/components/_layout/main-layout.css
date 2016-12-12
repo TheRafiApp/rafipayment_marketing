@@ -17,12 +17,18 @@ header {
   header nav {
     position: absolute;
     top: 20px;
-    right: 0; }
+    right: 0;
+    font-size: 1.3em;
+    font-weight: 500; }
     header nav li {
       display: inline-block;
       padding: 20px; }
       header nav li a {
         color: white; }
+        header nav li a:visited {
+          color: white; }
+        header nav li a.btn.btn-secondary {
+          color: #333; }
   header .logo {
     position: relative;
-    top: 10px; }
+    top: 16px; }

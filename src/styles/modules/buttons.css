@@ -1,0 +1,119 @@
+.color-success {
+  color: #45c97a; }
+
+.color-bg-success {
+  background-color: #45c97a; }
+
+.color-neutral {
+  color: #00b1ba; }
+
+.color-bg-neutral {
+  color: #fff;
+  background-color: #00b1ba; }
+
+.color-warning {
+  color: #f7d114; }
+
+.color-bg-warning {
+  background-color: #f7d114; }
+
+.color-error {
+  color: #e91e63; }
+
+.color-bg-error {
+  color: #fff;
+  background-color: #e91e63; }
+
+.btn {
+  display: inline-block;
+  position: relative;
+  padding: 9px 12px;
+  background-color: #fff;
+  color: #333;
+  border: 0;
+  border-radius: 4px;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  font-weight: 500;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s;
+  user-select: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -webkit-appearance: none; }
+  .btn.sm {
+    font-size: 0.7rem;
+    padding: 5px 8px; }
+  .btn:hover {
+    color: #333;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: all 0.9s; }
+  .btn:active {
+    background-color: #e8e8e8;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.3);
+    transition: all 0.2s; }
+  .btn.btn-secondary {
+    color: #fff;
+    background-color: #00b1ba; }
+    .btn.btn-secondary:hover {
+      color: #fff; }
+    .btn.btn-secondary:active {
+      background-color: #00dde8; }
+  .btn.btn-primary {
+    background-color: #e91e63;
+    color: #fff; }
+    .btn.btn-primary:hover {
+      color: #fff; }
+    .btn.btn-primary:active {
+      background-color: #ee4c83; }
+  .btn.btn-disabled {
+    color: #fff;
+    pointer-events: none;
+    background: #d0d0d0;
+    box-shadow: none; }
+  .btn.btn-circle {
+    height: 20px;
+    width: 20px;
+    padding: 9px;
+    border-radius: 300px;
+    background-color: #fff;
+    color: #808080;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.4); }
+    .btn.btn-circle.minus {
+      top: 6px;
+      box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+      transition: all 0.1s; }
+      .btn.btn-circle.minus:hover {
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+        transition: all 0.1s; }
+      .btn.btn-circle.minus:active {
+        top: 7px;
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
+        transition: none; }
+      .btn.btn-circle.minus:after {
+        content: '';
+        display: inline-block;
+        position: absolute;
+        top: 9px;
+        left: 5px;
+        width: 10px;
+        height: 3px;
+        background: #808080; }
+  .btn.icon {
+    width: 30px;
+    height: 30px;
+    top: 11px;
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center 5px; }
+  .btn.btn-icon {
+    top: 10px;
+    width: 28px;
+    margin-right: 5px;
+    padding: 0;
+    background: none;
+    box-shadow: none;
+    opacity: 0.35; }
+    .btn.btn-icon svg {
+      width: 100%; }

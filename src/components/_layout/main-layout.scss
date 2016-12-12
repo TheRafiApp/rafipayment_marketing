@@ -23,6 +23,8 @@ header {
     position: absolute;
     top: 20px;
     right: 0;
+    font-size: 1.3em;
+    font-weight: 500;
 
     li {
       display: inline-block;
@@ -30,12 +32,20 @@ header {
 
       a {
         color: white;
+
+        &:visited {
+          color: white;
+        }
+
+        &.btn.btn-secondary {
+          color: #333;
+        }
       }
     }
   }
 
   .logo {
     position: relative;
-    top: 10px;
+    top: 16px;
   }
 }
