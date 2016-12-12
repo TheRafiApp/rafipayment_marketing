@@ -1,4 +1,4 @@
-// src/components/About/index.js
+// src/components/Help/index.js
 import React, { PropTypes, Component } from 'react';
 import classnames from 'classnames';
 
@@ -11,10 +11,11 @@ export default class About extends Component {
 
   render() {
     const { className, ...props } = this.props;
+
     return (
-      <div className={classnames('About', className)} {...props}>
+      <div className={classnames('Help', className)}>
         <h1>
-          About
+          Help
         </h1>
       </div>
     );

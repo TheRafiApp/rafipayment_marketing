@@ -1,0 +1,28 @@
+.container {
+  position: relative;
+  width: 980px;
+  margin: 0 auto; }
+
+.logo {
+  display: block;
+  width: 100px; }
+  .logo svg {
+    width: 100%; }
+
+header {
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 2; }
+  header nav {
+    position: absolute;
+    top: 20px;
+    right: 0; }
+    header nav li {
+      display: inline-block;
+      padding: 20px; }
+      header nav li a {
+        color: white; }
+  header .logo {
+    position: relative;
+    top: 10px; }
