@@ -23,7 +23,7 @@ class Home extends Component {
           <div className="container">
             <div className="copy">
               <h1>Pay your rent,<br />Anywhere.</h1>
-              <HashScroll className="btn btn-secondary" to="#about" animate={{offset: 20, duration: 600}}>More Info</HashScroll>
+              <HashScroll className="btn btn-secondary btn-lg" to="#about" animate={{offset: 20, duration: 600}}>More Info</HashScroll>
             </div>
           </div>
         </div>

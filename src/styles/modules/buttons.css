@@ -41,9 +41,12 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -webkit-appearance: none; }
-  .btn.sm {
+  .btn.btn-sm {
     font-size: 0.7rem;
     padding: 5px 8px; }
+  .btn.btn-lg {
+    font-size: 1.1rem;
+    padding: 15px 18px; }
   .btn:hover {
     color: #333;
     box-shadow: 0 3px 4px rgba(0, 0, 0, 0.3);

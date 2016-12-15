@@ -1,0 +1,21 @@
+.request-form .message {
+  margin: 14px;
+  padding: 10px;
+  color: white;
+  line-height: 1.15em; }
+
+.request-form .message.error {
+  border: 1px solid red;
+  background: rgba(255, 0, 0, 0.4); }
+
+.request-form .message.success {
+  border: 1px solid green;
+  background: rgba(0, 255, 0, 0.4); }
+
+.request-form .email-input {
+  height: 34px;
+  width: calc(100% - 64px); }
+
+.request-form .btn {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0; }

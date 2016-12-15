@@ -29,7 +29,7 @@ body {
   font-size: 0.8em;
   line-height: 1em;
   color: #808080;
-  background: #3d586f; }
+  background: white; }
   body.loading:before {
     z-index: 9999; }
   body.loading:after {
