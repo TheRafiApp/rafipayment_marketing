@@ -12,12 +12,24 @@ class RequestForm extends React.Component {
   }
 
   handleChange(event) {
-    // this.setState({ error: false });
     this.setState({value: event.target.value});
   }
 
   handleSubmit(event) {
-    console.log(event);
+    event.preventDefault();
+
+    if (!this.state.value) {
+      return this.setState({
+        error: 'Please enter an email address',
+        success: false
+      })
+    }
+
+    this.setState({
+      error: false,
+      success: false,
+      loading: true
+    });
 
     const self = this;
 
@@ -44,31 +56,39 @@ class RequestForm extends React.Component {
       return response.json()
     })
     .then(function(data) {
-      console.log(data);
+
       if (data.message) {
         self.setState({
           error: false,
-          success: data.message
+          success: data.message,
+          loading: false
         })
       } else if (data.error) {
         self.setState({
           error: data.error,
-          success: false
+          success: false,
+          loading: false
         })
       }
     })
-    event.preventDefault();
+  }
+
+  renderLoading() {
+    if (this.state.loading) {
+      return (
+        <div className="loading"></div>
+      )
+    }
   }
 
   renderErrors() {
     if (this.state.error) {
-      console.log('rendering errors')
-      console.log(this.state.error)
+      let state = this.state.error;
+      let listName = 'List_RoleEmailMember: ';
+      let error = state.indexOf(listName) > -1 ? state.split(listName)[1] : this.state.error;
 
-      const error = this.state.error.indexOf('List_RoleEmailMember: ') > -1 ? this.state.error.split('List_RoleEmailMember: ')[1] : this.state.error;
       return (
         <div className="message error">
-
           { error }
         </div>
       )
@@ -77,9 +97,6 @@ class RequestForm extends React.Component {
 
   renderSuccess() {
     if (this.state.success) {
-      console.log('scuccessss')
-      console.log(this.state.success)
-
       return (
         <div className="message success">
           { this.state.success }
@@ -113,6 +130,7 @@ class RequestForm extends React.Component {
                 value="SEND"
               />
 
+              { this.renderLoading() }
               { this.renderErrors() }
               { this.renderSuccess() }
 

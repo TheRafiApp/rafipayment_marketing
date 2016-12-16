@@ -2,15 +2,14 @@
   margin: 14px;
   padding: 10px;
   color: white;
-  line-height: 1.15em; }
-
-.request-form .message.error {
-  border: 1px solid red;
-  background: rgba(255, 0, 0, 0.4); }
-
-.request-form .message.success {
-  border: 1px solid green;
-  background: rgba(0, 255, 0, 0.4); }
+  line-height: 1.15em;
+  border-radius: 4px; }
+  .request-form .message.error {
+    border: 1px solid red;
+    background: rgba(255, 0, 0, 0.4); }
+  .request-form .message.success {
+    border: 1px solid #45c97a;
+    background: rgba(69, 201, 122, 0.6); }
 
 .request-form .email-input {
   height: 34px;
@@ -19,3 +18,19 @@
 .request-form .btn {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0; }
+
+.loading {
+  display: block;
+  margin: 10px auto 16px;
+  height: 40px;
+  width: 40px;
+  background-image: url("../../images/loading.png");
+  background-size: cover;
+  opacity: 0.5;
+  animation: spin 1s linear infinite; }
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
