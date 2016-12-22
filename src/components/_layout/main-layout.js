@@ -26,7 +26,7 @@ const MainLayout = React.createClass({
                 {/* <li><HashScroll to="#about" animate={{offset: 20, duration: 600}}>About</HashScroll></li> */}
                 <li><Link to="/#about" activeClassName="active">About</Link></li>
                 <li><Link to="/help" activeClassName="active">Help</Link></li>
-                <li><a className="btn btn-secondary" href="https://plutus.dev">Login</a></li>
+                <li><a className="btn btn-secondary" href="https://staging.payment.rafiproperties.com">Login</a></li>
               </ul>
             </nav>
           </div>
@@ -44,7 +44,7 @@ const MainLayout = React.createClass({
                     {/* <li><HashScroll to="#about" animate={{offset: 20, duration: 600}}>About</HashScroll></li> */}
                     <li><Link to="/help" activeClassName="active">Help</Link></li>
                     <li><Link to="/terms" activeClassName="active">Terms</Link></li>
-                    <li><Link to="/terms" activeClassName="active">Privacy</Link></li>
+                    <li><Link to="/privacy" activeClassName="active">Privacy</Link></li>
                     {/* <li><a href="https://plutus.dev">Login</a></li> */}
                   </ul>
                   <span className="copyright">&copy; {new Date().getUTCFullYear()} Rafi Properties</span>

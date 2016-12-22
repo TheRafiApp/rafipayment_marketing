@@ -1,21 +1,23 @@
 // src/components/Home/about.js
 
-import React, { PropTypes, Component } from 'react';
+import React, { Component } from 'react';
 
-import ReactDOM from 'react-dom';
-
+// import ReactDOM from 'react-dom';
 import classnames from 'classnames';
 
 class About extends Component {
+  static propTypes = {}
+  static defaultProps = {}
+  state = {}
 
   render() {
-    const { className, ...props } = this.props;
+    const { className } = this.props;
 
     return (
-      <div id="about" className="container textonly">
+      <div id="about" className={classnames('container textonly', className)}>
         <div className="grid">
           <div className="grid__col grid__col--1-of-3">
-            <h3>No Fees, Ever</h3>
+            <h3>Absolutely Free</h3>
             <p>Rafi Payment is completely free for tenants. No ACH fees, no user fees, no advertisements.</p>
           </div>
 

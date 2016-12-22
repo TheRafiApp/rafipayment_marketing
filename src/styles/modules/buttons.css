@@ -5,11 +5,11 @@
   background-color: #45c97a; }
 
 .color-neutral {
-  color: #00b1ba; }
+  color: #02a7b9; }
 
 .color-bg-neutral {
   color: #fff;
-  background-color: #00b1ba; }
+  background-color: #02a7b9; }
 
 .color-warning {
   color: #f7d114; }
@@ -58,11 +58,11 @@
     transition: all 0.2s; }
   .btn.btn-secondary {
     color: #fff;
-    background-color: #00b1ba; }
+    background-color: #02a7b9; }
     .btn.btn-secondary:hover {
       color: #fff; }
     .btn.btn-secondary:active {
-      background-color: #00dde8; }
+      background-color: #02d0e6; }
   .btn.btn-primary {
     background-color: #e91e63;
     color: #fff; }

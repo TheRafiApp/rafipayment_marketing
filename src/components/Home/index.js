@@ -1,66 +1,57 @@
 // src/components/Home/index.js
 
-import React, { PropTypes, Component } from 'react';
-import { getScrollTop, setScrollTop, getOffsetTop } from '../../utils';
+import React, { Component } from 'react';
+import { scrollToElement } from '../../utils';
+
+import { Link } from 'react-router';
 import classnames from 'classnames';
 
-import HashScroll from 'react-scrollchor';
 import About from './about';
 
 import './style.css';
 
-function easeOutQuad(x, t, b, c, d) {
-  return -c * (t /= d) * (t - 2) + b;
-}
-
 class Home extends Component {
-
-  componentDidMount() {
-    document.title = "Rafi Payment";
-
-    const anchor = window.location.hash;
-    this.handleAnchor(anchor)
+  static propTypes = {}
+  static defaultProps = {
+    _isMounted: false
+  }
+  state = {
+    error: false,
+    success: false,
+    loading: false
   }
 
-  handleAnchor(anchor) {
-    // console.log(anchor)
-    // console.log(document.querySelectorAll(anchor));
-    var element = document.querySelectorAll(anchor)[0];
+  componentDidMount() {
+    this._isMounted = true;
+    document.title = "Rafi Payment | Pay your rent anywhere, anytime";
+    document.querySelectorAll('body')[0].classList.toggle('home');
 
-    const offset = 20;
-    const duration = 600;
-    const easing = easeOutQuad
+    this.checkForAnchor()
+  }
 
-    const start = getScrollTop();
-    const to = getOffsetTop(element) + offset;
-    const change = to - start;
-    const increment = 20;
+  componentWillUnmount() {
+    this._isMounted = false;
+    document.querySelectorAll('body')[0].classList.toggle('home');
+  }
 
-    function animate(elapsedTime) {
-      const elapsed = elapsedTime + increment;
-      const position = easing(null, elapsed, start, change, duration);
-      setScrollTop(position);
-      if (elapsed < duration) {
-        setTimeout(function() {
-          animate(elapsed);
-        }, increment);
-      }
-    }
-
-    animate(0);
-
+  checkForAnchor() {
+    const anchor = window.location.hash;
+    if (anchor) scrollToElement(anchor, 600)
+    else scrollToElement('body')
   }
 
   render() {
-    const { className, ...props } = this.props;
+    if (this._isMounted) this.checkForAnchor()
+
+    const { className } = this.props;
 
     return (
       <div className={classnames('Home', className)}>
         <div className="upper">
           <div className="container">
             <div className="copy">
-              <h1>Pay your rent,<br />Anywhere.</h1>
-              <HashScroll className="btn btn-secondary btn-lg" to="#about" animate={{offset: 20, duration: 600}}>More Info</HashScroll>
+              <h1>Pay your rent,<br />anywhere, anytime,<br />without any fees.</h1>
+              <Link className="btn btn-secondary btn-lg" to="/#about">More Info</Link>
             </div>
           </div>
         </div>

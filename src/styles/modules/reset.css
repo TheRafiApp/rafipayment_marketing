@@ -13,7 +13,7 @@ a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
 b, u, i, center,
-dl, dt, dd, ol, ul, li,
+dl, dt, dd, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed,
@@ -38,14 +38,20 @@ html, body {
 
 p {
   font-weight: 400;
-  line-height: 1.3em;
+  line-height: 1.4em;
   margin-bottom: 14px; }
 
 strong, .strong {
   font-weight: bold; }
 
-ol, ul {
+ul {
   list-style: none; }
+
+ol {
+  padding-left: 30px; }
+  ol li {
+    margin: 10px 0;
+    line-height: 1.2em; }
 
 blockquote, q {
   quotes: none; }
@@ -80,7 +86,7 @@ h3 {
 h4 {
   font-size: 1em;
   font-weight: 400;
-  line-height: 1em;
+  line-height: 1.2em;
   margin: 1.33em 0; }
 
 h5 {
