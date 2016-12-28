@@ -36,9 +36,9 @@ body {
     z-index: 999999; }
 
 a {
-  color: #017987;
-  text-decoration: none; }
+  color: #00a4b7;
+  text-decoration: underline; }
   a:hover {
-    color: #03d5eb; }
+    color: #00a4b7; }
   a:visited {
-    color: #017987; }
+    color: #00a4b7; }

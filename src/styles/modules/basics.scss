@@ -20,14 +20,18 @@ body {
 }
 
 a {
-  color: darken($color-highlight, 10%);
-  text-decoration: none;
+  // color: darken($color-highlight, 10%);
+  // text-decoration: none;
+  color: #00a4b7;
+  text-decoration: underline;
 
   &:hover {
-    color: lighten($color-highlight, 10%);
+    color: #00a4b7;
+    // color: lighten($color-highlight, 10%);
   }
 
   &:visited {
-    color: darken($color-highlight, 10%);
+    color: #00a4b7;
+    // color: darken($color-highlight, 10%);
   }
 }
