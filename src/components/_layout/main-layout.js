@@ -26,7 +26,7 @@ const MainLayout = React.createClass({
                 {/* <li><HashScroll to="#about" animate={{offset: 20, duration: 600}}>About</HashScroll></li> */}
                 <li><Link to="/#about" activeClassName="active">About</Link></li>
                 <li><Link to="/help" activeClassName="active">Help</Link></li>
-                <li><a className="btn btn-secondary" href="https://staging.payment.rafiproperties.com">Login</a></li>
+                <li><a className="btn btn-secondary" href={ location.protocol + '//app.' + location.hostname }>Login</a></li>
               </ul>
             </nav>
           </div>
