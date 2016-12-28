@@ -41,7 +41,7 @@ class RequestForm extends React.Component {
       'body': JSON.stringify(data),
     }
 
-    const request = new Request('//localhost:3001/', {
+    const request = new Request(location.protocol + '//' + location.hostname + ':3001/', {
     	method: 'POST',
     	mode: 'cors',
     	redirect: 'follow',
