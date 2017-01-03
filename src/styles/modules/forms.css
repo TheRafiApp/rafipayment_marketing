@@ -13,4 +13,5 @@ input[type="text"] {
   outline: 0;
   font-size: 100%;
   font-family: sans-serif;
-  line-height: normal; }
+  line-height: normal;
+  -webkit-appearance: none; }
