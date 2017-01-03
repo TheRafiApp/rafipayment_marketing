@@ -16,6 +16,7 @@
   width: calc(100% - 64px); }
 
 .request-form .btn {
+  width: 64px;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0; }
 

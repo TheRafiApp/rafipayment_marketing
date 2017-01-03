@@ -47,7 +47,10 @@ const MainLayout = React.createClass({
                     <li><Link to="/privacy" activeClassName="active">Privacy</Link></li>
                     {/* <li><a href="https://plutus.dev">Login</a></li> */}
                   </ul>
+                </div>
+                <div className="grid__col grid__col--1-of-4">
                   <span className="copyright">&copy; {new Date().getUTCFullYear()} Rafi Properties</span>
+                  <div className="clear"></div>
                 </div>
               </div>
             </nav>
