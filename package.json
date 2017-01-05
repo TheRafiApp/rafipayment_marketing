@@ -20,7 +20,7 @@
   },
   "scripts": {
     "start": "react-scripts-with-sass start",
-    "build": "react-scripts-with-sass build",
+    "build": "react-scripts-with-sass build; cat ./sitemap.xml > ./build/sitemap.xml",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   }
