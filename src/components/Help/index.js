@@ -42,23 +42,11 @@ export default class Help extends Component {
           <div className="group">
             <h3>Who is the payment processor for Rafi Payment?</h3>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Suspendisse pharetra dui turpis, in pulvinar nulla tincidunt vitae.
-            Integer rutrum, nunc at aliquam sagittis, quam tortor facilisis est,
-            ut dictum velit arcu ut est. Pellentesque porttitor pellentesque
-            ligula, a commodo nibh mattis et. Suspendisse eleifend posuere turpis,
-            sed consectetur est fringilla sit amet. Sed rhoncus diam non nibh
-            pulvinar, at blandit dolor malesuada. Mauris sem dui, auctor eu turpis
-            non, aliquet iaculis lectus. Vestibulum vel ante mi. Nunc non tempor
-            ipsum, molestie varius urna.</p>
+            <p><a href="http://dwolla.com" target="_blank">Dwolla</a> is a
+            powerful payments platform that securely connects to bank or credit
+            union accounts to enable the transfer of money for any
+            individual or organization in the U.S.</p>
           </div>
-
-          <div className="group"></div>
-          <h3>What is Dwolla?</h3>
-
-          <p>Dwolla is a powerful payments platform that securely connects to
-          bank or credit union accounts to enable the transfer of money for any
-          individual or organization in the U.S.</p>
 
           <div className="group">
             <h3>Why is my transaction still pending?</h3>
@@ -101,12 +89,9 @@ export default class Help extends Component {
           <h2>Support</h2>
 
           <div className="group">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Suspendisse pharetra dui turpis, in pulvinar nulla tincidunt vitae.
-            Integer rutrum, nunc at aliquam sagittis, quam tortor facilisis est,
-            ut dictum velit arcu ut est. Pellentesque porttitor pellentesque
-            ligula, a commodo nibh mattis et. Suspendisse eleifend posuere turpis,
-            sed consectetur est fringilla sit amet.</p>
+            <p>Please feel free to reach out to us at any time, whether you are
+            having a problem or just have a question. We'll get back to you as
+            soon as possible!</p>
           </div>
 
           <a className="btn btn-secondary" href="mailto:leasing@rafiproperties.com?subject=Customer Support Request">Contact Support</a>
