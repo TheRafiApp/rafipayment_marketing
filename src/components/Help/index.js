@@ -49,6 +49,39 @@ export default class Help extends Component {
           </div>
 
           <div className="group">
+            <h3>Is Rafi Payment secure?</h3>
+
+            <p>We use SSL to protect your activity, all of your traffic is
+            strongly encrypted. We also do not store any sensitive data on our
+            servers, all banking is done through Dwolla.</p>
+          </div>
+
+          <div className="group">
+            <h3>What is Instant Account Verification?</h3>
+
+            <p>Instant Account Verification is a method of verifying a bank
+            account by logging into your online banking account, through our
+            secure payment processor, Dwolla. This is the preferred Verification
+            method, as it is much faster and easier than micro deposits. Again,
+            we never have any access to your private banking information, and do
+            not store any sensitive data on our servers.
+            </p>
+
+          </div>
+
+          <div className="group">
+            <h3>What are Micro Deposits?</h3>
+
+            <p>Micro deposits are an alternative way to verify your bank account.
+            Dwolla will make two small deposits between $0.01 and $0.10 into the
+            bank account you provided. Keep an eye out for these—they typically
+            show up within 1-3 business days—and note the specific amounts. Then
+            go to the payment section of your account, and enter the amounts.
+            </p>
+
+          </div>
+
+          <div className="group">
             <h3>Why is my transaction still pending?</h3>
 
             <p>A bank or credit union transaction usually takes 3–4 business days
@@ -58,14 +91,24 @@ export default class Help extends Component {
           </div>
 
           <div className="group">
-            <h3>Why did the transaction fail?</h3>
+            <h3>Why did my transaction fail?</h3>
 
-            <p>Sometimes transactions to or from a bank or credit union can fail. Here are a few reasons why a transaction can fail:</p>
+            <p>Sometimes transactions to or from a bank or credit union can fail.
+            Here are a few reasons why a transaction can fail:</p>
 
             <ul>
-              <li>Insufficient funds. There are insufficient funds in the sending bank or credit union account to complete the transaction.</li>
-              <li>Frozen account. A bank or credit union account has been frozen.</li>
-              <li>Other reasons. A bank or credit union rejects the transaction for some other reason.Other reasons. A bank or credit union rejects the transaction for some other reason.</li>
+              <li>
+                Insufficient funds. There are insufficient funds in the
+                sending bank or credit union account to complete the transaction.
+              </li>
+              <li>
+                Frozen account. A bank or credit union account has been frozen.
+              </li>
+              <li>
+                Other reasons. A bank or credit union rejects the transaction
+                for some other reason.Other reasons. A bank or credit union
+                rejects the transaction for some other reason.
+              </li>
             </ul>
 
             <p>If a transaction fails, please contact your bank or credit union to
