@@ -2,6 +2,10 @@
   position: relative;
   width: 980px;
   margin: 0 auto;
+
+  &.medium {
+    width: 768px;
+  }
 }
 
 .logo {
@@ -208,6 +212,10 @@ footer {
 @media (max-width: 768px) {
   .container {
     width: 95%;
+
+    &.medium {
+      width: 85%;
+    }
   }
 }
 

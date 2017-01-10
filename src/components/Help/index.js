@@ -34,7 +34,7 @@ export default class Help extends Component {
 
     return (
       <div className={classnames('Help', 'content', className)}>
-        <div className="container">
+        <div className="container medium">
           <h1>Help</h1>
 
           <h2>FAQ</h2>

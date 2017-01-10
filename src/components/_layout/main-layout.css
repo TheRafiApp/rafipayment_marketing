@@ -2,6 +2,8 @@
   position: relative;
   width: 980px;
   margin: 0 auto; }
+  .container.medium {
+    width: 768px; }
 
 .logo {
   display: block;
@@ -129,7 +131,9 @@ footer {
 
 @media (max-width: 768px) {
   .container {
-    width: 95%; } }
+    width: 95%; }
+    .container.medium {
+      width: 85%; } }
 
 @media (max-width: 480px) {
   nav li {
