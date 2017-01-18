@@ -9,7 +9,7 @@ export function setScrollTop(position) {
 export function getOffsetTop(element) {
   const { top } = element.getBoundingClientRect();
   return top + getScrollTop();
-}
+} 
 
 export function scrollToElement(selector, duration = 20, offset = 0) {
   var element = document.querySelectorAll(selector)[0];
