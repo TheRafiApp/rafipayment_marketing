@@ -1,8 +1,8 @@
 // Buttons
-@import 'colors';
+@import './colors.scss';
 
 .btn {
-  display: inline-block;
+  display: inline-block; 
   position: relative;
   padding: 9px 12px;
   background-color: $color-text-light;
