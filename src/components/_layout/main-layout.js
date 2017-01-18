@@ -1,16 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router';
 
-// packages
-// import HashScroll from 'react-scrollchor';
-
 // layout
 import Logo from './logo';
 import RequestForm from './request_form';
 
 // css
 import './main-layout.css';
-
+ 
 const MainLayout = React.createClass({
   render: function() {
     return (
@@ -23,7 +20,6 @@ const MainLayout = React.createClass({
 
             <nav>
               <ul>
-                {/* <li><HashScroll to="#about" animate={{offset: 20, duration: 600}}>About</HashScroll></li> */}
                 <li><Link to="/#about" activeClassName="active">About</Link></li>
                 <li><Link to="/help" activeClassName="active">Help</Link></li>
                 <li><a className="btn btn-secondary" href={ location.protocol + '//app.' + location.hostname }>Login</a></li>
@@ -41,11 +37,9 @@ const MainLayout = React.createClass({
               <div className="grid">
                 <div className="grid__col grid__col--3-of-4">
                   <ul>
-                    {/* <li><HashScroll to="#about" animate={{offset: 20, duration: 600}}>About</HashScroll></li> */}
                     <li><Link to="/help" activeClassName="active">Help</Link></li>
                     <li><Link to="/terms" activeClassName="active">Terms</Link></li>
                     <li><Link to="/privacy" activeClassName="active">Privacy</Link></li>
-                    {/* <li><a href="https://plutus.dev">Login</a></li> */}
                   </ul>
                 </div>
                 <div className="grid__col grid__col--1-of-4">
