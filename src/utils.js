@@ -33,3 +33,4 @@ export function scrollToElement(selector, duration = 20, offset = 0) {
   }
   animate(0);
 }
+ 
