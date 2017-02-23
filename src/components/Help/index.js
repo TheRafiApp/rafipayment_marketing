@@ -53,7 +53,7 @@ export default class Help extends Component {
 
             <p>We use SSL to protect your activity, all of your traffic is
             strongly encrypted. We also do not store any sensitive data on our
-            servers, all banking is done through Dwolla.</p>
+            servers, all banking is done through <a href="http://dwolla.com" target="_blank">Dwolla</a>.</p>
           </div>
 
           <div className="group">
@@ -70,13 +70,13 @@ export default class Help extends Component {
           </div>
 
           <div className="group">
-            <h3>What are Micro Deposits?</h3>
+            <h3>What are Microdeposits?</h3>
 
-            <p>Micro deposits are an alternative way to verify your bank account.
+            <p>Microdeposits are an alternative way to verify your bank account.
             Dwolla will make two small deposits between $0.01 and $0.10 into the
             bank account you provided. Keep an eye out for these—they typically
             show up within 1-3 business days—and note the specific amounts. Then
-            go to the payment section of your account, and enter the amounts.
+            go to the <a href="https://app.payment.rafiproperties.com/account/payment">payment section</a> of your account, and enter the amounts.
             </p>
 
           </div>
