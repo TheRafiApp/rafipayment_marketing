@@ -1,2 +1,7 @@
 .Help h3 {
   font-size: 1.6em; }
+  .Help h3 a {
+    display: none;
+    text-decoration: none; }
+  .Help h3:hover a {
+    display: inline-block; }

@@ -1,5 +1,6 @@
 // src/components/Help/index.js
 import React, { Component } from 'react';
+import { Link } from 'react-router';
 import { scrollToElement } from '../../utils';
 import classnames from 'classnames';
 
@@ -37,10 +38,10 @@ export default class Help extends Component {
         <div className="container medium">
           <h1>Help</h1>
 
-          <h2>FAQ</h2>
+          <h2 id="faq">FAQ</h2>
 
-          <div className="group">
-            <h3>Who is the payment processor for Rafi Payment?</h3>
+          <div className="group" id="dwolla">
+            <h3>Who is the payment processor for Rafi Payment? <Link className="anchor-link" to="/help/#dwolla">#</Link></h3>
 
             <p><a href="http://dwolla.com" target="_blank">Dwolla</a> is a
             powerful payments platform that securely connects to bank or credit
@@ -48,16 +49,16 @@ export default class Help extends Component {
             individual or organization in the U.S.</p>
           </div>
 
-          <div className="group">
-            <h3>Is Rafi Payment secure?</h3>
+          <div className="group" id="security">
+            <h3>Is Rafi Payment secure? <Link className="anchor-link" to="/help/#security">#</Link></h3>
 
             <p>We use SSL to protect your activity, all of your traffic is
             strongly encrypted. We also do not store any sensitive data on our
             servers, all banking is done through <a href="http://dwolla.com" target="_blank">Dwolla</a>.</p>
           </div>
 
-          <div className="group">
-            <h3>What is Instant Account Verification?</h3>
+          <div className="group" id="iav">
+            <h3>What is Instant Account Verification? <Link className="anchor-link" to="/help/#iav">#</Link></h3>
 
             <p>Instant Account Verification is a method of verifying a bank
             account by logging into your online banking account, through our
@@ -69,8 +70,8 @@ export default class Help extends Component {
 
           </div>
 
-          <div className="group">
-            <h3>What are Microdeposits?</h3>
+          <div className="group" id="microdeposits">
+            <h3>What are Microdeposits? <Link className="anchor-link" to="/help/#microdeposits">#</Link></h3>
 
             <p>Microdeposits are an alternative way to verify your bank account.
             Dwolla will make two small deposits between $0.01 and $0.10 into the
@@ -81,8 +82,8 @@ export default class Help extends Component {
 
           </div>
 
-          <div className="group">
-            <h3>Why is my transaction still pending?</h3>
+          <div className="group" id="transaction-pending">
+            <h3>Why is my transaction still pending? <Link className="anchor-link" to="/help/#transaction-pending">#</Link></h3>
 
             <p>A bank or credit union transaction usually takes 3–4 business days
             to complete via the Automated Clearing House network (ACH) used by
@@ -90,8 +91,8 @@ export default class Help extends Component {
             complete if over a weekend or a holiday.</p>
           </div>
 
-          <div className="group">
-            <h3>Why did my transaction fail?</h3>
+          <div className="group" id="transaction-failed">
+            <h3>Why did my transaction fail? <Link className="anchor-link" to="/help/#transaction-failed">#</Link></h3>
 
             <p>Sometimes transactions to or from a bank or credit union can fail.
             Here are a few reasons why a transaction can fail:</p>
@@ -117,8 +118,8 @@ export default class Help extends Component {
             not be processed.</p>
           </div>
 
-          <div className="group">
-            <h3>How does Dwolla protect customers’ data?</h3>
+          <div className="group" id="dwolla-security">
+            <h3>How does Dwolla protect customers’ data? <Link className="anchor-link" to="/help/#dwolla-security">#</Link></h3>
 
             <p>Dwolla protects customers’ data through secure servers and a
             world-class cloud environment. Dwolla’s servers are encrypted with
@@ -129,7 +130,7 @@ export default class Help extends Component {
           </div>
 
 
-          <h2>Support</h2>
+          <h2 id="support">Support</h2>
 
           <div className="group">
             <p>Please feel free to reach out to us at any time, whether you are
