@@ -52,7 +52,7 @@ export default class Help extends Component {
           <div className="group" id="security">
             <h3>Is Rafi Payment secure? <Link className="anchor-link" to="/help/#security">#</Link></h3>
 
-            <p>We use SSL to protect your activity, all of your traffic is
+            <p>We use <a href="https://en.wikipedia.org/wiki/Transport_Layer_Security" target="_blank">SSL</a> to protect your activity, all of your traffic is
             strongly encrypted. We also do not store any sensitive data on our
             servers, all banking is done through <a href="http://dwolla.com" target="_blank">Dwolla</a>.</p>
           </div>
@@ -62,10 +62,15 @@ export default class Help extends Component {
 
             <p>Instant Account Verification is a method of verifying a bank
             account by logging into your online banking account, through our
-            secure payment processor, Dwolla. This is the preferred Verification
-            method, as it is much faster and easier than micro deposits. Again,
+            secure payment processor, Dwolla. This is the preferred verification
+            method, as it is much easier and faster than microdeposits. Again,
             we never have any access to your private banking information, and do
             not store any sensitive data on our servers.
+            </p>
+
+            <p>
+              The majority of banks support Instant Account Verification, but if
+              your bank does not, you will have to use microdeposit verification.
             </p>
 
           </div>
@@ -74,10 +79,15 @@ export default class Help extends Component {
             <h3>What are Microdeposits? <Link className="anchor-link" to="/help/#microdeposits">#</Link></h3>
 
             <p>Microdeposits are an alternative way to verify your bank account.
-            Dwolla will make two small deposits between $0.01 and $0.10 into the
-            bank account you provided. Keep an eye out for these—they typically
-            show up within 1-3 business days—and note the specific amounts. Then
-            go to the <a href="https://app.payment.rafiproperties.com/account/payment">payment section</a> of your account, and enter the amounts.
+            We will make two small deposits between $0.01 and $0.10 into the
+            bank account you provided. They should show up within 1-3 business days.
+            Note the specific amounts, then go to your account <a href="https://app.payment.rafiproperties.com/account/payment">payment settings</a>,
+            and enter the amounts to complete the verification process.
+            </p>
+
+            <p>
+              If microdeposits are rejected by your bank, you can retry them via your account payment settings,
+              or <a href="mailto:leasing@rafiproperties.com?subject=Customer Support - Rafi Payment">contact customer support.</a>
             </p>
 
           </div>
@@ -99,14 +109,14 @@ export default class Help extends Component {
 
             <ul>
               <li>
-                Insufficient funds. There are insufficient funds in the
+                <strong>Insufficient funds</strong> - There are insufficient funds in the
                 sending bank or credit union account to complete the transaction.
               </li>
               <li>
-                Frozen account. A bank or credit union account has been frozen.
+                <strong>Frozen account</strong> - A bank or credit union account has been frozen.
               </li>
               <li>
-                Other reasons. A bank or credit union rejects the transaction
+                <strong>Other reasons</strong> - A bank or credit union rejects the transaction
                 for some other reason.Other reasons. A bank or credit union
                 rejects the transaction for some other reason.
               </li>
@@ -138,7 +148,7 @@ export default class Help extends Component {
             soon as possible!</p>
           </div>
 
-          <a className="btn btn-secondary" href="mailto:leasing@rafiproperties.com?subject=Customer Support Request">Contact Support</a>
+          <a className="btn btn-secondary" href="mailto:leasing@rafiproperties.com?subject=Customer Support - Rafi Payment">Contact Support</a>
 
         </div>
       </div>

@@ -79,10 +79,11 @@ header {
     line-height: 1.4em; }
   .content ul {
     list-style-type: square;
-    margin-left: 30px; }
+    margin-left: 30px;
+    margin-bottom: 16px; }
     .content ul li {
       max-width: 80%;
-      margin-bottom: 8px;
+      margin-bottom: 10px;
       line-height: 1.4em; }
   .content .group {
     margin-bottom: 30px; }
