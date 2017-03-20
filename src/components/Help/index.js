@@ -76,7 +76,7 @@ export default class Help extends Component {
           </div>
 
           <div className="group" id="microdeposits">
-            <h3>What are Microdeposits? <Link className="anchor-link" to="/help/#microdeposits">#</Link></h3>
+            <h3>What are microdeposits? <Link className="anchor-link" to="/help/#microdeposits">#</Link></h3>
 
             <p>Microdeposits are an alternative way to verify your bank account.
             We will make two small deposits between $0.01 and $0.10 into the
@@ -88,6 +88,31 @@ export default class Help extends Component {
             <p>
               If microdeposits are rejected by your bank, you can retry them via your account payment settings,
               or <a href="mailto:leasing@rafiproperties.com?subject=Customer Support - Rafi Payment">contact customer support.</a>
+            </p>
+
+          </div>
+
+          <div className="group" id="rent-split">
+            <h3>What is rent split? <Link className="anchor-link" to="/help/#rent-split">#</Link></h3>
+
+            <p>We need to know exactly how you and your roommates divide up your
+            rent each month, in order to keep things fair. If you
+            have <Link className="anchor-link" to="/help/#autopay">autopay</Link> turned
+            on, your split amount is how much you are charged automatically.
+            If you don't use autopay, your rent split amount will be suggested
+            as the amount of your manual payment when you pay rent.
+            </p>
+
+          </div>
+
+          <div className="group" id="autopay">
+            <h3>How does autopay work? <Link className="anchor-link" to="/help/#autopay">#</Link></h3>
+
+            <p>We recomend allowing autopay when you set up your account. Your
+            rent split amount will be automatically charged to the bank account
+            you provided on the day your rent is due. You will be notified by
+            email 5 days before we charge you, and again after the transfer has
+            been created.
             </p>
 
           </div>

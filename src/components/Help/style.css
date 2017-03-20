@@ -5,3 +5,6 @@
     text-decoration: none; }
   .Help h3:hover a {
     display: inline-block; }
+
+.Help p, .Help ul {
+  font-size: 1.1em; }
