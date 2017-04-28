@@ -76,9 +76,9 @@ export default class Help extends Component {
           </div>
 
           <div className="group" id="microdeposits">
-            <h3>What are microdeposits? <Link className="anchor-link" to="/help/#microdeposits">#</Link></h3>
+            <h3>What are micro-deposits? <Link className="anchor-link" to="/help/#microdeposits">#</Link></h3>
 
-            <p>Microdeposits are an alternative way to verify your bank account.
+            <p>Micro-deposits are an alternative way to verify your bank account.
             We will make two small deposits between $0.01 and $0.10 into the
             bank account you provided. They should show up within 1-3 business days.
             Note the specific amounts, then go to your account <a href="https://app.payment.rafiproperties.com/account/payment">payment settings</a>,
@@ -86,8 +86,29 @@ export default class Help extends Component {
             </p>
 
             <p>
-              If microdeposits are rejected by your bank, you can retry them via your account payment settings,
+              If micro-deposits are rejected by your bank, you can retry them via your account payment settings,
               or <a href="mailto:leasing@rafiproperties.com?subject=Customer Support - Rafi Payment">contact customer support.</a>
+            </p>
+
+          </div>
+
+          <div className="group" id="maxattempts">
+            <h3>What do I do if I reach the maximum attempts for micro-deposit verification? <Link className="anchor-link" to="/help/#maxattempts">#</Link></h3>
+
+            <p>Unfortunately, for security reasons this will increase the amount
+            of time it will take to verify your account. You will need to follow
+            these steps:
+
+            <ol>
+              <li>Remove the new bank account from your account <a href="https://app.payment.rafiproperties.com/account/payment">payment settings</a>.</li>
+              <li>Wait 48 hours after the bank account was originally added to re-add the bank account.</li>
+              <li>Initiate new micro-deposits to the bank account.</li>
+              <li>Verify the bank account using the new posted micro-deposit amounts.</li>
+            </ol>
+            </p>
+
+            <p>
+               If you are still having problems with this after retrying, <a href="mailto:leasing@rafiproperties.com?subject=Customer Support - Rafi Payment">contact customer support.</a>
             </p>
 
           </div>
