@@ -75,6 +75,24 @@ export default class Help extends Component {
 
           </div>
 
+          <div className="group" id="bank-login">
+            <h3>Why am I being asked for my bank login credentials? <Link className="anchor-link" to="/help/#bank-login">#</Link></h3>
+
+            <p>Don't be alarmed, this is just one way of verifying you own the
+            bank account you are linking to your Rafi Payment account. The login
+            data never goes to our sever, it goes directly to our secure payment
+            processor, <a href="http://dwolla.com" target="_blank">Dwolla</a>,
+            who only use it to verify your bank account once. Every security
+            precaution has been taken to ensure your data remains private and secure.
+            </p>
+
+            <p>If you are still not comfortable using your bank login credentials
+            for Instant Account Verification, you may use micro-deposit verification
+            instead.
+            </p>
+
+          </div>
+
           <div className="group" id="microdeposits">
             <h3>What are micro-deposits? <Link className="anchor-link" to="/help/#microdeposits">#</Link></h3>
 
