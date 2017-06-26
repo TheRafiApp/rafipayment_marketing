@@ -7,6 +7,7 @@ import { Link } from 'react-router';
 import classnames from 'classnames';
 
 import About from './about';
+import Download from './download';
 
 import './style.css';
 
@@ -56,6 +57,7 @@ class Home extends Component {
           </div>
         </div>
         <About></About>
+        <Download></Download>
       </div>
     );
   }

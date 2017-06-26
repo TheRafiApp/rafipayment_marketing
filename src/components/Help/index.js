@@ -40,8 +40,22 @@ export default class Help extends Component {
 
           <h2 id="faq">FAQ</h2>
 
+          <div className="group" id="caniuse">
+            <h3>Can I use Rafi Payment? <Link className="anchor-link" to="/help/#caniuse">#</Link></h3>
+
+            <p>Currently, Rafi Payment is invite-only and and available
+            exclusively for tenants of Rafi Properties.
+            </p>
+
+            <p>Rafi Payment is available for Android and iOS, and as a web application.</p>
+
+            {/* <p>If you are interested in becoming an early adopter, you may
+            request an early access pass below.
+            </p> */}
+          </div>
+
           <div className="group" id="dwolla">
-            <h3>Who is the payment processor for Rafi Payment? <Link className="anchor-link" to="/help/#dwolla">#</Link></h3>
+            <h3>Who is the payment platform for Rafi Payment? <Link className="anchor-link" to="/help/#dwolla">#</Link></h3>
 
             <p><a href="http://dwolla.com" target="_blank">Dwolla</a> is a
             powerful payments platform that securely connects to bank or credit
@@ -53,24 +67,21 @@ export default class Help extends Component {
             <h3>Is Rafi Payment secure? <Link className="anchor-link" to="/help/#security">#</Link></h3>
 
             <p>We use <a href="https://en.wikipedia.org/wiki/Transport_Layer_Security" target="_blank">SSL</a> to protect your activity, all of your traffic is
-            strongly encrypted. We also do not store any sensitive data on our
-            servers, all banking is done through <a href="http://dwolla.com" target="_blank">Dwolla</a>.</p>
+            strongly encrypted.</p>
           </div>
 
           <div className="group" id="iav">
             <h3>What is Instant Account Verification? <Link className="anchor-link" to="/help/#iav">#</Link></h3>
 
             <p>Instant Account Verification is a method of verifying a bank
-            account by logging into your online banking account, through our
-            secure payment processor, Dwolla. This is the preferred verification
-            method, as it is much easier and faster than microdeposits. Again,
-            we never have any access to your private banking information, and do
-            not store any sensitive data on our servers.
+            account by logging into your online banking account, a third party
+            service offered by our secure payment provider, Dwolla. This is the
+            preferred verification method, as it is much easier and faster than
+            microdeposits.
             </p>
 
-            <p>
-              The majority of banks support Instant Account Verification, but if
-              your bank does not, you will have to use microdeposit verification.
+            <p>The majority of banks support Instant Account Verification, but if
+            your bank does not, you will have to use microdeposit verification.
             </p>
 
           </div>
@@ -80,10 +91,8 @@ export default class Help extends Component {
 
             <p>Don't be alarmed, this is just one way of verifying you own the
             bank account you are linking to your Rafi Payment account. The login
-            data never goes to our sever, it goes directly to our secure payment
-            processor, <a href="http://dwolla.com" target="_blank">Dwolla</a>,
-            who only use it to verify your bank account once. Every security
-            precaution has been taken to ensure your data remains private and secure.
+            data never goes to our server. Every security precaution has been
+            taken to ensure your data remains private and secure.
             </p>
 
             <p>If you are still not comfortable using your bank login credentials
@@ -97,7 +106,7 @@ export default class Help extends Component {
             <h3>What are micro-deposits? <Link className="anchor-link" to="/help/#microdeposits">#</Link></h3>
 
             <p>Micro-deposits are an alternative way to verify your bank account.
-            We will make two small deposits between $0.01 and $0.10 into the
+            Two small deposits between $0.01 and $0.10 will be made into the
             bank account you provided. They should show up within 1-3 business days.
             Note the specific amounts, then go to your account <a href="https://app.payment.rafiproperties.com/account/payment">payment settings</a>,
             and enter the amounts to complete the verification process.
@@ -147,7 +156,7 @@ export default class Help extends Component {
           <div className="group" id="autopay">
             <h3>How does autopay work? <Link className="anchor-link" to="/help/#autopay">#</Link></h3>
 
-            <p>We recomend allowing autopay when you set up your account. Your
+            <p>We recommend setting up autopay when you activate your account. Your
             rent split amount will be automatically charged to the bank account
             you provided on the day your rent is due. You will be notified by
             email 5 days before we charge you, and again after the transfer has
@@ -180,8 +189,7 @@ export default class Help extends Component {
                 <strong>Frozen account</strong> - A bank or credit union account has been frozen.
               </li>
               <li>
-                <strong>Other reasons</strong> - A bank or credit union rejects the transaction
-                for some other reason.Other reasons. A bank or credit union
+                <strong>Other reasons</strong> - A bank or credit union
                 rejects the transaction for some other reason.
               </li>
             </ul>
