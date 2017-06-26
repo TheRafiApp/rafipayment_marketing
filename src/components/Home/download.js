@@ -23,15 +23,17 @@ class Download extends Component {
         <div className="container">
           <div className="grid">
             <div className="grid__col grid__col--1-of-2">
-              <div className="grid__col grid__col--1-of-2">
-                <a href="#">
-                  <Android />
-                </a>
-              </div>
-              <div className="grid__col grid__col--1-of-2">
-                <a href="#">
-                  <Ios />
-                </a>
+              <div className="grid">
+                <div className="grid__col grid__col--1-of-2">
+                  <a href="#">
+                    <Android />
+                  </a>
+                </div>
+                <div className="grid__col grid__col--1-of-2">
+                  <a href="#">
+                    <Ios />
+                  </a>
+                </div>
               </div>
             </div>
           </div>

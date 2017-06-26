@@ -6,3 +6,16 @@
     text-align: center;
   }
 }
+
+@media (max-width: 700px) {
+  #download {
+    width: 40%;
+    margin: 0 auto;
+
+    .grid {
+      .grid__col {
+        margin-bottom: 8px;
+      }
+    }
+  }
+}
