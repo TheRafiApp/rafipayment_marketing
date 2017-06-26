@@ -5,11 +5,11 @@
   background-color: #45c97a; }
 
 .color-neutral {
-  color: #02a7b9; }
+  color: #f68e1f; }
 
 .color-bg-neutral {
   color: #fff;
-  background-color: #02a7b9; }
+  background-color: #f68e1f; }
 
 .color-warning {
   color: #f7d114; }
@@ -59,11 +59,11 @@
     transition: all 0.2s; }
   .btn.btn-secondary {
     color: #fff;
-    background-color: #02a7b9; }
+    background-color: #f68e1f; }
     .btn.btn-secondary:hover {
       color: #fff; }
     .btn.btn-secondary:active {
-      background-color: #02d0e6; }
+      background-color: #f8a44b; }
   .btn.btn-primary {
     background-color: #e91e63;
     color: #fff; }
@@ -74,7 +74,7 @@
   .btn.btn-disabled {
     color: #fff;
     pointer-events: none;
-    background: #d0d0d0;
+    background: #fdfdfd;
     box-shadow: none; }
   .btn.btn-circle {
     height: 20px;

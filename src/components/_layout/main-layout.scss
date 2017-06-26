@@ -46,7 +46,15 @@ header {
   left: 0;
   right: 0;
   z-index: 2;
-  background-color: #02a7b9;
+  // background-color: #02a7b9;
+  background: rgba(32,39,49,1);
+  // background: -moz-linear-gradient(-45deg, rgba(32,39,49,1) 0%, rgba(29,70,94,1) 100%);
+  // background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(32,39,49,1)), color-stop(100%, rgba(29,70,94,1)));
+  // background: -webkit-linear-gradient(-45deg, rgba(32,39,49,1) 0%, rgba(29,70,94,1) 100%);
+  // background: -o-linear-gradient(-45deg, rgba(32,39,49,1) 0%, rgba(29,70,94,1) 100%);
+  // background: -ms-linear-gradient(-45deg, rgba(32,39,49,1) 0%, rgba(29,70,94,1) 100%);
+  background: linear-gradient(135deg, rgba(32,39,49,1) 0%, rgba(29,70,94,1) 100%);
+  // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#202731', endColorstr='#1d465e', GradientType=1 );
 
   nav {
     position: absolute;
@@ -59,16 +67,22 @@ header {
         color: white;
         text-transform: uppercase;
 
+        &:hover {
+          color: white;
+        }
+
         &:visited {
           color: white;
         }
 
         &.btn.btn-secondary {
-          background-color: white;
-          color: #02a7b9;
+          background-color: #f68e1f;
+          color: #1d465e;
+          // color: #02a7b9;
 
           &:hover {
-            color: #02a7b9;
+            // color: #02a7b9;
+            color: #1d465e;
           }
         }
       }
@@ -138,13 +152,13 @@ header {
 
 .home {
   header {
-    background-color: transparent;
+    background: transparent;
 
     nav {
       li {
         a {
           &.btn.btn-secondary {
-            background-color: #02a7b9;
+            background-color: #f68e1f;
             color: #333;
           }
         }
