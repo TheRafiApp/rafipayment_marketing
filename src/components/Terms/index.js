@@ -110,8 +110,9 @@ export default class Terms extends Component {
           <p>TO THE MAXIMUM EXTENT PERMITTED BY LAW, WE WILL NOT BE LIABLE RESPONSIBLE FOR LOST PROFITS, REVENUES, OR DATA, FINANCIAL LOSSES, OR INDIRECT, SPECIAL, CONSEQUENTIAL, EXEMPLARY, OR PUNITIVE DAMAGES. TO THE MAXIMUM EXTENT PERMITTED BY LAW, OUR TOTAL LIABILITY FOR ANY CLAIM RELATING TO THE SERVICES OR THESE TERMS OF USE, INCLUDING ANY CLAIM FOR ANY IMPLIED WARRANTY, IS LIMITED TO THE AMOUNT YOU PAID TO US TO USE THE SERVICES.</p>
 
           <ol>
-            <li>If you violate any of these Terms of Use and we don&#39;t take action right away, that doesn&#39;t mean we are waiving any of our rights. If you want to sue us, you must do so in the state or federal courts located in Boston, Massachusetts, and you consent to personal jurisdiction in those courts. Massachusetts Law will apply to any such disputes between you and Rafi Payment. If any part of these Terms of Use are held to be invalid or enforceable, the rest of the Terms of Use will still apply.</li>
-            <li>If you need to send us any legal notice (including notice that you believe another user is infringing your intellectual property or other rights), please do by mail to the following address:</li>
+            <li>If you violate any of these terms and we do not take immediate action, that does not mean we are waiving any of our rights. Any parties seeking to pursue litigation against Rafi Payment must do so in the state or federal courts located in Boston, Massachusetts, and will consent to personal jurisdiction in those courts. Massachusetts Law will apply to any such disputes between said parties and Rafi Payment. If any part of these Terms of Use are held to be invalid or enforceable, the remainder of the Terms of Use will still apply.</li>
+
+            <li>Any legal notices should be sent to the following address:</li>
           </ol>
 
           <p>
