@@ -1,8 +1,6 @@
 // src/components/Home/download.js
 
 import React, { Component } from 'react';
-
-// import ReactDOM from 'react-dom';
 import classnames from 'classnames';
 
 import './download.css';
@@ -25,7 +23,7 @@ class Download extends Component {
             <div className="grid__col grid__col--1-of-2">
               <div className="grid">
                 <div className="grid__col grid__col--1-of-2">
-                  <a href="#">
+                  <a href="https://play.google.com/store/apps/details?id=com.rafi.payment&hl=en" target="_blank">
                     <Android />
                   </a>
                 </div>

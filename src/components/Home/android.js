@@ -3,13 +3,11 @@ import React, { Component } from 'react';
 import './android.css';
 
 class Android extends Component {
-  // static propTypes = {}
-  // static defaultProps = {}
-  // state = {}
+  static propTypes = {}
+  static defaultProps = {}
+  state = {}
 
   render() {
-    const { className } = this.props;
-
     return (
 			<svg viewBox="0 0 135 40" className="android">
 				<g>

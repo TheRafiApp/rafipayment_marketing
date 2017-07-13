@@ -26,12 +26,17 @@ a {
   text-decoration: underline;
 
   &:hover {
-    color: #00a4b7;
+    color: darken(#00a4b7, 10%);
     // color: lighten($color-highlight, 70%);
   }
 
   &:visited {
     color: #00a4b7;
     // color: darken($color-highlight, 10%);
+
+    &:hover {
+      color: darken(#00a4b7, 10%);
+      // color: lighten($color-highlight, 70%);
+    }
   }
 }

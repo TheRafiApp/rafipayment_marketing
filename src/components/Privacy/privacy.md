@@ -61,9 +61,7 @@ You may request details of personal information which we hold about you under th
 If you believe that any information we are holding on you is incorrect or incomplete, please write to or email us as soon as possible, at the above address. We will promptly correct any information found to be incorrect.
 
 Rafi Payment
-
 PO Box 120003,
-
 Boston, MA 02112
 
 [leasing@rafiproperties.com](mailto:leasing@rafiproperties.com)

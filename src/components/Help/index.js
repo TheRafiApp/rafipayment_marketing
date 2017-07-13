@@ -28,7 +28,6 @@ export default class Help extends Component {
   }
 
   render() {
-    console.log('renderHelp')
     if (this._isMounted) this.checkForAnchor()
 
     const { className } = this.props;
@@ -44,14 +43,7 @@ export default class Help extends Component {
             <h3>Can I use Rafi Payment? <Link className="anchor-link" to="/help/#caniuse">#</Link></h3>
 
             <p>Currently, Rafi Payment is invite-only and and available
-            exclusively for tenants of Rafi Properties.
-            </p>
-
-            <p>Rafi Payment is available for Android and iOS, and as a web application.</p>
-
-            {/* <p>If you are interested in becoming an early adopter, you may
-            request an early access pass below.
-            </p> */}
+            exclusively for tenants of Rafi Properties. Rafi Payment is available for Android and iOS, and as a web application.</p>
           </div>
 
           <div className="group" id="dwolla">

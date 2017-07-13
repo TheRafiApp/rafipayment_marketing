@@ -112,8 +112,8 @@ class RequestForm extends React.Component {
           <h2>Request Early Access</h2>
           <div className="grid">
             <div className="grid__col grid__col--1-of-3">
-              <p>Want to receive updates about Rafi Payment?
-              We are currently in beta testing, if you’d like to be an early adopter,
+              <p>Are you a landlord? Want to receive updates about Rafi Payment?
+              Rafi Payment is invite-only, if you’d like to be an early adopter,
               submit your email address and we’ll reach out to you.</p>
 
               <input
