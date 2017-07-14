@@ -37,8 +37,8 @@ TO THE MAXIMUM EXTENT PERMITTED BY LAW, WE WILL NOT BE LIABLE RESPONSIBLE FOR LO
 1. If you violate any of these terms and we do not take immediate action, that does not mean we are waiving any of our rights. Any parties seeking to pursue litigation against Rafi Payment must do so in the state or federal courts located in Boston, Massachusetts, and will consent to personal jurisdiction in those courts. Massachusetts Law will apply to any such disputes between said parties and Rafi Payment. If any part of these Terms of Use are held to be invalid or enforceable, the remainder of the Terms of Use will still apply.
 2. Any legal notices should be sent to the following address:
 
-Rafi Payment<br>
-PO BOX 120003<br>
+Rafi Payment
+PO BOX 120003
 Boston MA 02110
 
 If you have any questions, contact us at [leasing@rafiproperties.com](mailto:leasing@rafiproperties.com) or **(617) 610-1739**
