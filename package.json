@@ -1,5 +1,6 @@
 {
   "name": "rafipayment_marketing",
+  "repository": "https://github.com/TheRafiApp/rafipayment_marketing",
   "version": "1.0.0",
   "private": false,
   "license": "MIT",
@@ -15,8 +16,6 @@
   },
   "dependencies": {
     "classnames": "^2.2.5",
-    "express": "^4.15.3",
-    "morgan": "^1.8.2",
     "prop-types": "^15.5.10",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
