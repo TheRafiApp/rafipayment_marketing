@@ -1,19 +1,22 @@
-// src/components/Help/index.js
 import React, { Component } from 'react';
-import { Link } from 'react-router';
+import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types'
 import { scrollToElement } from '../../utils';
 import classnames from 'classnames';
 
 import './style.css';
 
 export default class Help extends Component {
+  static propTypes = {
+    className: PropTypes.string
+  }
   static defaultProps = {
     isMounted: false
   }
 
   componentDidMount() {
     this._isMounted = true;
-    document.title = "Help | Rafi Payment";
+    document.title = 'Help | Rafi Payment';
     this.checkForAnchor()
   }
 
@@ -49,7 +52,7 @@ export default class Help extends Component {
           <div className="group" id="dwolla">
             <h3>Who is the payment platform for Rafi Payment? <Link className="anchor-link" to="/help/#dwolla">#</Link></h3>
 
-            <p><a href="http://dwolla.com" target="_blank">Dwolla</a> is a
+            <p><a href="http://dwolla.com" target="_blank" rel="noopener noreferrer">Dwolla</a> is a
             powerful payments platform that securely connects to bank or credit
             union accounts to enable the transfer of money for any
             individual or organization in the U.S.</p>
@@ -58,7 +61,7 @@ export default class Help extends Component {
           <div className="group" id="security">
             <h3>Is Rafi Payment secure? <Link className="anchor-link" to="/help/#security">#</Link></h3>
 
-            <p>We use <a href="https://en.wikipedia.org/wiki/Transport_Layer_Security" target="_blank">SSL</a> to protect your activity, all of your traffic is
+            <p>We use <a href="https://en.wikipedia.org/wiki/Transport_Layer_Security" target="_blank" rel="noopener noreferrer">SSL</a> to protect your activity, all of your traffic is
             strongly encrypted.</p>
           </div>
 
@@ -81,7 +84,7 @@ export default class Help extends Component {
           <div className="group" id="bank-login">
             <h3>Why am I being asked for my bank login credentials? <Link className="anchor-link" to="/help/#bank-login">#</Link></h3>
 
-            <p>Don't be alarmed, this is just one way of verifying you own the
+            <p>{"Don't"} be alarmed, this is just one way of verifying you own the
             bank account you are linking to your Rafi Payment account. The login
             data never goes to our server. Every security precaution has been
             taken to ensure your data remains private and secure.
@@ -139,7 +142,7 @@ export default class Help extends Component {
             rent each month, in order to keep things fair. If you
             have <Link className="anchor-link" to="/help/#autopay">autopay</Link> turned
             on, your split amount is how much you are charged automatically.
-            If you don't use autopay, your rent split amount will be suggested
+            If you do not use autopay, your rent split amount will be suggested
             as the amount of your manual payment when you pay rent.
             </p>
 
@@ -198,17 +201,16 @@ export default class Help extends Component {
             <p>Dwolla protects customers’ data through secure servers and a
             world-class cloud environment. Dwolla’s servers are encrypted with
             128-bit or greater encryption controlled by Transport Layer Security
-            (TLS), and sit behind firewall and intrusion protection. Our cloud
+            (TLS), and sit behind firewall and intrusion protection. Dwolla’s cloud
             service offers a highly secure environment with a dedicated security
             team.</p>
           </div>
-
 
           <h2 id="support">Support</h2>
 
           <div className="group">
             <p>Please feel free to reach out to us at any time, whether you are
-            having a problem or just have a question. We'll get back to you as
+            having a problem or just have a question. We’ll get back to you as
             soon as possible!</p>
           </div>
 

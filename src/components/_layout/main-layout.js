@@ -1,28 +1,32 @@
-import React from 'react';
-import { Link } from 'react-router';
+import React from 'react'
+import PropTypes from 'prop-types'
+import { NavLink } from 'react-router-dom'
 
 // layout
-import Logo from './logo';
-import RequestForm from './request_form';
+import Logo from './logo'
+import RequestForm from './request_form'
 
 // css
-import './main-layout.css';
- 
-const MainLayout = React.createClass({
-  render: function() {
+import './main-layout.css'
+
+class MainLayout extends React.Component {
+  static propTypes = {
+    children: PropTypes.any
+  }
+  render() {
     return (
       <div className="app">
         <header>
           <div className="container">
-            <Link className="logo" to="/" activeClassName="active">
+            <NavLink className="logo" to="/" activeClassName="active">
               <Logo></Logo>
-            </Link>
+            </NavLink>
 
             <nav>
               <ul>
-                <li><Link to="/#about" activeClassName="active">About</Link></li>
-                <li><Link to="/help" activeClassName="active">Help</Link></li>
-                <li><a className="btn btn-secondary" href={ location.protocol + '//app.' + location.hostname }>Login</a></li>
+                <li><NavLink to="/#about">About</NavLink></li>
+                <li><NavLink to="/help">Help</NavLink></li>
+                <li><a className="btn btn-secondary" href={ window.location.protocol + '//app.' + window.location.hostname }>Login</a></li>
               </ul>
             </nav>
           </div>
@@ -37,9 +41,9 @@ const MainLayout = React.createClass({
               <div className="grid">
                 <div className="grid__col grid__col--3-of-4">
                   <ul>
-                    <li><Link to="/help" activeClassName="active">Help</Link></li>
-                    <li><Link to="/terms" activeClassName="active">Terms</Link></li>
-                    <li><Link to="/privacy" activeClassName="active">Privacy</Link></li>
+                    <li><NavLink to="/help" activeClassName="active">Help</NavLink></li>
+                    <li><NavLink to="/terms" activeClassName="active">Terms</NavLink></li>
+                    <li><NavLink to="/privacy" activeClassName="active">Privacy</NavLink></li>
                   </ul>
                 </div>
                 <div className="grid__col grid__col--1-of-4">
@@ -51,8 +55,8 @@ const MainLayout = React.createClass({
           </div>
         </footer>
       </div>
-    );
+    )
   }
-});
+}
 
-export default MainLayout;
+export default MainLayout

@@ -1,22 +1,24 @@
-import React from 'react';
-
-import './request_form.css';
+import React from 'react'
+import {Request} from '../../utils'
+import './request_form.css'
 
 class RequestForm extends React.Component {
   constructor(props) {
-    super(props);
-    this.state = {value: ''};
+    super(props)
+    this.state = {
+      value: ''
+    }
 
-    this.handleChange = this.handleChange.bind(this);
-    this.handleSubmit = this.handleSubmit.bind(this);
+    this.handleChange = this.handleChange.bind(this)
+    this.handleSubmit = this.handleSubmit.bind(this)
   }
 
   handleChange(event) {
-    this.setState({value: event.target.value});
+    this.setState({value: event.target.value})
   }
 
   handleSubmit(event) {
-    event.preventDefault();
+    event.preventDefault()
 
     if (!this.state.value) {
       return this.setState({
@@ -25,46 +27,25 @@ class RequestForm extends React.Component {
       })
     }
 
-    this.setState({
-      error: false,
-      success: false,
-      loading: true
-    });
-
-    const self = this;
+    this.setState({error: false, success: false, loading: true})
 
     const data = {
       'email': this.state.value
     }
 
-    const options = {
-      'body': JSON.stringify(data),
-    }
-
-    const request = new Request(location.protocol + '//' + location.hostname + ':3001/', {
-    	method: 'POST',
-    	mode: 'cors',
-    	redirect: 'follow',
-    	headers: new Headers({
-        'Accept': 'application/json',
-    	  'Content-Type': 'application/json'
-    	})
-    });
-
-    fetch(request, options)
-    .then(function(response) {
-      return response.json()
+    return new Request(window.location.protocol + '//' + window.location.hostname + ':3001/', {
+      method: 'POST',
+      body: data
     })
-    .then(function(data) {
-
+    .then((data) => {
       if (data.message) {
-        self.setState({
+        this.setState({
           error: false,
           success: data.message,
           loading: false
         })
       } else if (data.error) {
-        self.setState({
+        this.setState({
           error: data.error,
           success: false,
           loading: false
@@ -83,13 +64,15 @@ class RequestForm extends React.Component {
 
   renderErrors() {
     if (this.state.error) {
-      let state = this.state.error;
-      let listName = 'List_RoleEmailMember: ';
-      let error = state.indexOf(listName) > -1 ? state.split(listName)[1] : this.state.error;
+      let state = this.state.error
+      let listName = 'List_RoleEmailMember: '
+      let error = state.indexOf(listName) > -1
+        ? state.split(listName)[1]
+        : this.state.error
 
       return (
         <div className="message error">
-          { error }
+          {error}
         </div>
       )
     }
@@ -99,7 +82,7 @@ class RequestForm extends React.Component {
     if (this.state.success) {
       return (
         <div className="message success">
-          { this.state.success }
+          {this.state.success}
         </div>
       )
     }
@@ -112,35 +95,21 @@ class RequestForm extends React.Component {
           <h2>Request Early Access</h2>
           <div className="grid">
             <div className="grid__col grid__col--1-of-3">
-              <p>Are you a landlord? Want to receive updates about Rafi Payment?
-              Rafi Payment is invite-only, if you’d like to be an early adopter,
-              submit your email address and we’ll reach out to you.</p>
+              <p>Are you a landlord? Want to receive updates about Rafi Payment? Rafi Payment is invite-only, if you’d like to be an early adopter, submit your email address and we’ll reach out to you.</p>
 
-              <input
-                type="text"
-                className="email-input"
-                placeholder="Email"
-                value={this.state.value}
-                onChange={this.handleChange}
-              />
+              <input type="text" className="email-input" placeholder="Email" value={this.state.value} onChange={this.handleChange}/>
 
-              <input
-                className="btn btn-secondary"
-                type="submit"
-                value="SEND"
-              />
-
-              { this.renderLoading() }
-              { this.renderErrors() }
-              { this.renderSuccess() }
+              <input className="btn btn-secondary" type="submit" value="SEND"/> {this.renderLoading()}
+              {this.renderErrors()}
+              {this.renderSuccess()}
 
             </div>
           </div>
 
         </form>
       </div>
-    );
+    )
   }
 }
 
-export default RequestForm;
+export default RequestForm

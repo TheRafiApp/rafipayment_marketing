@@ -1,18 +1,21 @@
 // src/components/Home/index.js
 
-import React, { Component } from 'react';
-import { scrollToElement } from '../../utils';
+import React, { Component } from 'react'
+import PropTypes from 'prop-types'
+import { scrollToElement } from '../../utils'
 
-import { Link } from 'react-router';
-import classnames from 'classnames';
+import { Link } from 'react-router-dom'
+import classnames from 'classnames'
 
-import About from './about';
-import Download from './download';
+import About from './about'
+import Download from './download'
 
-import './style.css';
+import './style.css'
 
 class Home extends Component {
-  static propTypes = {}
+  static propTypes = {
+    className: PropTypes.string
+  }
   static defaultProps = {
     _isMounted: false
   }
@@ -24,15 +27,15 @@ class Home extends Component {
 
   componentDidMount() {
     this._isMounted = true;
-    document.title = "Rafi Payment | Pay your rent anywhere, anytime";
-    document.querySelectorAll('body')[0].classList.toggle('home');
+    document.title = 'Rafi Payment | Pay your rent anywhere, anytime'
+    document.querySelectorAll('body')[0].classList.toggle('home')
 
     this.checkForAnchor()
   }
 
   componentWillUnmount() {
     this._isMounted = false;
-    document.querySelectorAll('body')[0].classList.toggle('home');
+    document.querySelectorAll('body')[0].classList.toggle('home')
   }
 
   checkForAnchor() {
@@ -59,7 +62,7 @@ class Home extends Component {
         <About></About>
         <Download></Download>
       </div>
-    );
+    )
   }
 }
 
