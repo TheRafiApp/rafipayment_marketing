@@ -1,19 +1,23 @@
-// src/components/Terms/index.js
-import React, {Component} from 'react';
-import {scrollToElement} from '../../utils';
-import classnames from 'classnames';
+/* eslint react/no-unescaped-entities: 0 */
+import React, { Component } from 'react'
+import PropTypes from 'prop-types'
+import { scrollToElement } from '../../utils'
+import classnames from 'classnames'
 
 import './style.css';
 
 export default class Terms extends Component {
+  static propTypes = {
+    className: PropTypes.string
+  }
   static defaultProps = {
     isMounted: false
   }
 
   componentDidMount() {
-    this._isMounted = true;
-    document.title = "Terms of Serivce | Rafi Payment";
-    this.checkForAnchor();
+    this._isMounted = true
+    document.title = 'Terms of Serivce | Rafi Payment'
+    this.checkForAnchor()
   }
 
   componentWillUnmount() {
@@ -21,18 +25,19 @@ export default class Terms extends Component {
   }
 
   checkForAnchor() {
-    const anchor = window.location.hash;
-    if (anchor)
-      scrollToElement(anchor, 600)
-    else
-      scrollToElement('body')
+    const anchor = window.location.hash
+    const options = anchor
+      ? [anchor, 600]
+      : ['body']
+    return scrollToElement(...options)
   }
 
   render() {
-    if (this._isMounted)
+    if (this._isMounted) {
       this.checkForAnchor()
+    }
 
-    const {className} = this.props;
+    const { className } = this.props
 
     return (
       <div className={classnames('Terms', 'content', className)}>
@@ -92,7 +97,7 @@ export default class Terms extends Component {
 
             <li>We reserve the right to alter these Terms of Use at any time. We will notify you on the site or via email of important changes. You are free to cancel or discontinue using the Service at any time without penalty. Your continued use of the Service following a change to these Terms of Use constitutes acceptance of the change.</li>
 
-            <li>If our pricing policy changes, we will give you at least 30 days&#39; notice, via the site or email.</li>
+            <li>If our pricing policy changes, we will give you at least 30 days' notice, via the site or email.</li>
 
             <li>We reserve the right to refuse service to anyone for any reason, and likewise to suspend or discontinue your use of the Service at any time for any reason. In particular, we may terminate or suspend your account if you engage in fraudulent or illegal conduct, provide inaccurate, incomplete, false, or misleading information, or otherwise violate these Terms of Use or any of our policies, or if we determine, in our sole discretion, that your use of the Services poses an unacceptable credit or fraud risk to us.</li>
 
@@ -128,6 +133,6 @@ export default class Terms extends Component {
           {/* End terms */}
         </div>
       </div>
-    );
+    )
   }
 }

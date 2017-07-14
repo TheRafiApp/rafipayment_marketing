@@ -39,9 +39,11 @@ class Home extends Component {
   }
 
   checkForAnchor() {
-    const anchor = window.location.hash;
-    if (anchor) scrollToElement(anchor, 600)
-    else scrollToElement('body')
+    const anchor = window.location.hash
+    const options = anchor
+      ? [anchor, 600]
+      : ['body']
+    return scrollToElement(...options)
   }
 
   render() {

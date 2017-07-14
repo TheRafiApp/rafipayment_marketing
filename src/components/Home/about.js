@@ -1,19 +1,21 @@
 // src/components/Home/about.js
 
-import React, { Component } from 'react';
+import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 
-// import ReactDOM from 'react-dom';
-import classnames from 'classnames';
+import classnames from 'classnames'
 
-import './about.css';
+import './about.css'
 
 class About extends Component {
-  static propTypes = {}
+  static propTypes = {
+    className: PropTypes.string
+  }
   static defaultProps = {}
   state = {}
 
   render() {
-    const { className } = this.props;
+    const { className } = this.props
 
     return (
       <div id="about" className={classnames('textonly', className)}>
@@ -36,8 +38,8 @@ class About extends Component {
           </div>
         </div>
       </div>
-    );
+    )
   }
 }
 
-export default About;
+export default About
