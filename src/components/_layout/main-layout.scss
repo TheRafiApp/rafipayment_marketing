@@ -184,9 +184,10 @@ footer {
     font-size: 0.6em;
   }
 
-  &.textonly {
-    padding: 40px 80px;
-  }
+  // &.textonly {
+    // padding: 40px 80px;
+    // padding: 40px;
+  // }
 }
 
 .textonly {
@@ -216,7 +217,6 @@ footer {
 @media (max-width: 980px) {
   .container {
     width: 768px;
-
   }
 }
 
@@ -242,5 +242,9 @@ footer {
 
   .copy h1 {
     font-size: 2.4em;
+  }
+
+  footer.textonly {
+    padding: 30px 20px;
   }
 }
