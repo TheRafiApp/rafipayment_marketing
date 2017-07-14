@@ -22,7 +22,7 @@ export default (
         <Route path="/help" component={analyticsWrap(Help)} />
         <Route path="/terms" component={analyticsWrap(Terms)} />
         <Route path="/privacy" component={analyticsWrap(Privacy)} />
-        <Route component={NotFound} />
+        <Route component={analyticsWrap(NotFound)} />
       </Switch>
     </MainLayout>
   </BrowserRouter>
