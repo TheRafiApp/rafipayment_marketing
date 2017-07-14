@@ -119,7 +119,7 @@ export default class Help extends Component {
 
             <p>Unfortunately, for security reasons this will increase the amount
             of time it will take to verify your account. You will need to follow
-            these steps:
+            these steps:</p>
 
             <ol>
               <li>Remove the new bank account from your account <a href="https://app.payment.rafiproperties.com/account/payment">payment settings</a>.</li>
@@ -127,7 +127,6 @@ export default class Help extends Component {
               <li>Initiate new micro-deposits to the bank account.</li>
               <li>Verify the bank account using the new posted micro-deposit amounts.</li>
             </ol>
-            </p>
 
             <p>
                If you are still having problems with this after retrying, <a href="mailto:leasing@rafiproperties.com?subject=Customer Support - Rafi Payment">contact customer support.</a>
