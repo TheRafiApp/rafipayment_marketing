@@ -89,4 +89,4 @@ class Ios extends Component {
   }
 }
 
-export default Ios;
+export default Ios

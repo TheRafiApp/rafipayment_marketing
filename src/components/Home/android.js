@@ -1,6 +1,5 @@
-import React, {Component} from 'react';
-
-import './android.css';
+import React, {Component} from 'react'
+import './android.css'
 
 class Android extends Component {
   static propTypes = {}
@@ -81,4 +80,4 @@ class Android extends Component {
   }
 }
 
-export default Android;
+export default Android
