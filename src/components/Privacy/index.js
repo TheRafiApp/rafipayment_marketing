@@ -1,38 +1,40 @@
-// src/components/Privacy/index.js
-import React, {Component} from 'react';
-import {scrollToElement} from '../../utils';
-import classnames from 'classnames';
+import React, {Component} from 'react'
+import PropTypes from 'prop-types'
+import { scrollToElement } from '../../utils'
+import classnames from 'classnames'
 
-import './style.css';
+import './style.css'
 
 export default class Privacy extends Component {
+  static propTypes = {
+    className: PropTypes.string
+  }
   static defaultProps = {
     isMounted: false
   }
 
   componentDidMount() {
-    this._isMounted = true;
-    document.title = "Privacy Policy | Rafi Payment";
-    this.checkForAnchor();
+    this._isMounted = true
+    document.title = 'Privacy Policy | Rafi Payment'
+    this.checkForAnchor()
   }
 
   componentWillUnmount() {
-    this._isMounted = false;
+    this._isMounted = false
   }
 
   checkForAnchor() {
-    const anchor = window.location.hash;
-    if (anchor)
-      scrollToElement(anchor, 600)
-    else
-      scrollToElement('body')
+    const anchor = window.location.hash
+    const options = anchor
+      ? [anchor, 600]
+      : ['body']
+    return scrollToElement(...options)
   }
 
   render() {
-    if (this._isMounted)
-      this.checkForAnchor()
+    if (this._isMounted) this.checkForAnchor()
 
-    const {className} = this.props;
+    const { className } = this.props
 
     return (
       <div className={classnames('Privacy', 'content', className)}>
@@ -98,6 +100,6 @@ export default class Privacy extends Component {
           {/* End privacy policy */}
         </div>
       </div>
-    );
+    )
   }
 }
