@@ -8,7 +8,7 @@
   color: #f68e1f; }
 
 .color-bg-neutral {
-  color: #fff;
+  color: #ffffff;
   background-color: #f68e1f; }
 
 .color-warning {
@@ -21,7 +21,7 @@
   color: #e91e63; }
 
 .color-bg-error {
-  color: #fff;
+  color: #ffffff;
   background-color: #e91e63; }
 
 body {
@@ -29,7 +29,7 @@ body {
   font-size: 0.8em;
   line-height: 1em;
   color: #808080;
-  background: white; }
+  background: #ffffff; }
   body.loading:before {
     z-index: 9999; }
   body.loading:after {

@@ -43,6 +43,10 @@
     transition: all 0.2s;
   }
 
+  &:visited {
+    color: $color-text-dark;
+  }
+
   &.btn-secondary {
     color: $color-text-light;
     background-color: $color-highlight;

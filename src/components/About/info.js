@@ -1,11 +1,7 @@
-// src/components/Home/about.js
-
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
 import classnames from 'classnames'
-
-import './about.css'
 
 class About extends Component {
   static propTypes = {
@@ -22,18 +18,18 @@ class About extends Component {
         <div className="container">
           <div className="grid">
             <div className="grid__col grid__col--1-of-3">
-              <h3>Absolutely Free</h3>
-              <p>Rafi Payment is completely free for tenants. No ACH fees, no user fees, no advertisements.</p>
+              <h3>Simple Dashboard</h3>
+              <p>Our intuitive billing interface makes managing payments easy.</p>
             </div>
 
             <div className="grid__col grid__col--1-of-3">
-              <h3>Rent Reminders</h3>
-              <p>Never forget to pay rent on time! Receive email and push notifications to remind you that your rent is due.</p>
+              <h3>Split Rent</h3>
+              <p>Have roommates? Splitting your rent is easy, and to make sure everyone is paying on time, {"you'll"} be notified when each bill is fully paid.</p>
             </div>
 
             <div className="grid__col grid__col--1-of-3">
-              <h3>Autopay</h3>
-              <p>Pay your rent automatically every month, or pay manually as you please. Split your rent with your roommates, and receive updates as your roommates pay rent.</p>
+              <h3>Flexible Payments</h3>
+              <p>Link multiple bank accounts, pay when you are ready</p>
             </div>
           </div>
         </div>

@@ -93,9 +93,9 @@ header {
   .content .group {
     margin-bottom: 30px; }
 
-.home header {
+.home header, .about header {
   background: transparent; }
-  .home header nav li a.btn.btn-secondary {
+  .home header nav li a.btn.btn-secondary, .about header nav li a.btn.btn-secondary {
     background-color: #f68e1f;
     color: #333; }
 

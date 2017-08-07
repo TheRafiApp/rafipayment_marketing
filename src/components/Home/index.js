@@ -57,12 +57,14 @@ class Home extends Component {
           <div className="container">
             <div className="copy">
               <h1>Pay your rent,<br />anywhere, anytime,<br />without any fees.</h1>
-              <Link className="btn btn-secondary btn-lg" to="/#about">More Info</Link>
+              <Link className="btn btn-primary btn-lg" to="/#download">Download</Link>
+              <Link className="btn btn-lg" to="/about">Learn More</Link>
+              {/* <Link className="btn btn-secondary btn-lg" to="/about">More Info</Link> */}
             </div>
           </div>
         </div>
-        <About></About>
-        <Download></Download>
+        <About />
+        <Download />
       </div>
     )
   }

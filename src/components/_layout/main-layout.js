@@ -24,7 +24,7 @@ class MainLayout extends React.Component {
 
             <nav>
               <ul>
-                <li><NavLink to="/#about">About</NavLink></li>
+                <li><NavLink to="/about">About</NavLink></li>
                 <li><NavLink to="/help">Help</NavLink></li>
                 <li><a className="btn btn-secondary" href={ window.location.protocol + '//app.' + window.location.hostname }>Login</a></li>
               </ul>

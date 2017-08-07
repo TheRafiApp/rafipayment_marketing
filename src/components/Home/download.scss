@@ -4,6 +4,15 @@
 
   .grid {
     text-align: center;
+
+    a {
+      display: inline-block;
+      width: 100%;
+
+      svg {
+        display: block;
+      }
+    }
   }
 }
 

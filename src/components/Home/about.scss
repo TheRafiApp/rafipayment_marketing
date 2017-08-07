@@ -1,9 +1,11 @@
+@import '../../styles/modules/colors.scss';
+
 #about {
   background-color: #202731;
-  color: #fff;
+  color: $color-text-light;
   -webkit-font-smoothing: antialiased;
 
   h3 {
-    color: #fff;
+    color: $color-text-light;
   }
 }
