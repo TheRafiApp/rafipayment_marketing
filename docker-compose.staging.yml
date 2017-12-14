@@ -1,0 +1,22 @@
+version: "3.0"
+services:
+  marketing:
+    build: .
+    image: rafipayment_marketing
+    container_name: marketing
+    environment:
+      - NODE_ENV=staging
+    volumes:
+      - rafipayment_public_data:/app/build/
+    ports:
+      - 3000:3000
+    command: npm run build
+
+volumes:
+  rafipayment_public_data:
+    external: true
+
+networks:
+  default:
+    external:
+      name: rafipayment_network
