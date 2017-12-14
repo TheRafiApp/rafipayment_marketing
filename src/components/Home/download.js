@@ -1,13 +1,10 @@
-// src/components/Home/download.js
-
-import React, { Component } from 'react';
-import classnames from 'classnames';
-
+import React, { Component } from 'react'
+import classnames from 'classnames'
 import PropTypes from 'prop-types'
-import './download.css';
+import Android from './android.js'
+import Ios from './ios.js'
 
-import Android from './android.js';
-import Ios from './ios.js';
+import './download.css'
 
 class Download extends Component {
   static propTypes = {
@@ -17,7 +14,7 @@ class Download extends Component {
   state = {}
 
   render() {
-    const { className } = this.props;
+    const { className } = this.props
 
     return (
       <div id="download" className={classnames(className)}>
@@ -44,4 +41,4 @@ class Download extends Component {
   }
 }
 
-export default Download;
+export default Download

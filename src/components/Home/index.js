@@ -1,5 +1,3 @@
-// src/components/Home/index.js
-
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { scrollToElement } from '../../utils'
@@ -59,7 +57,6 @@ class Home extends Component {
               <h1>Pay your rent,<br />anywhere, anytime,<br />without any fees.</h1>
               <Link className="btn btn-primary btn-lg" to="/#download">Download</Link>
               <Link className="btn btn-lg" to="/about">Learn More</Link>
-              {/* <Link className="btn btn-secondary btn-lg" to="/about">More Info</Link> */}
             </div>
           </div>
         </div>
@@ -70,4 +67,4 @@ class Home extends Component {
   }
 }
 
-export default Home;
+export default Home
