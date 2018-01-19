@@ -61,8 +61,19 @@ export default class Help extends Component {
           <div className="group" id="security">
             <h3>Is Rafi Payment secure? <Link className="anchor-link" to="/help/#security">#</Link></h3>
 
-            <p>We use <a href="https://en.wikipedia.org/wiki/Transport_Layer_Security" target="_blank" rel="noopener noreferrer">SSL</a> to protect your activity, all of your traffic is
-            strongly encrypted.</p>
+            <p>We use <a href="https://en.wikipedia.org/wiki/Transport_Layer_Security" target="_blank" rel="noopener noreferrer">SSL</a> to protect your activity, all of your activity is
+            protected via encryption.</p>
+          </div>
+
+          <div className="group" id="mobile-onboarding">
+            <h3>How do I set up my account using the mobile app? <Link className="anchor-link" to="/help/#mobile-onboarding">#</Link></h3>
+
+            <p>If you are a new tenant, and you would like to use our mobile app,
+            first <Link to="/#download">download the app</Link> on your device.
+            Then open the invitation email on your mobile device, and click the
+            activate button. If you click the activate button without having the
+            mobile app installed, it will open the web version.
+            </p>
           </div>
 
           <div className="group" id="iav">
@@ -142,7 +153,20 @@ export default class Help extends Component {
             have <Link className="anchor-link" to="/help/#autopay">autopay</Link> turned
             on, your split amount is how much you are charged automatically.
             If you do not use autopay, your rent split amount will be suggested
-            as the amount of your manual payment when you pay rent.
+            as the amount of your manual payment when you pay rent. We also use
+            your rent split to determine how to carry over unpaid balances from
+            your rent bills.
+            </p>
+            
+          </div>
+
+          <div className="group" id="zero-split">
+            <h3>What if I’m not the one who pays my rent? <Link className="anchor-link" to="/help/#zero-split">#</Link></h3>
+
+            <p>If your rent is paid by someone you live with, they can simply
+            set their rent split to 100% of the rent. If your rent is paid by a
+            parent or someone else who doesn’t live with you, you should contact
+            customer support so we can make arrangements for them to pay for you.
             </p>
 
           </div>
@@ -157,6 +181,10 @@ export default class Help extends Component {
             been created.
             </p>
 
+            <p>If you would prefer not to use autopay, that’s fine too. You will
+            receive notifications to remind you to pay your rent.
+            </p>
+
           </div>
 
           <div className="group" id="transaction-pending">
@@ -165,7 +193,9 @@ export default class Help extends Component {
             <p>A bank or credit union transaction usually takes 3–4 business days
             to complete via the Automated Clearing House network (ACH) used by
             banks to transfer funds. Please note that transfers take longer to
-            complete if over a weekend or a holiday.</p>
+            complete if over a weekend or a holiday.
+            </p>
+
           </div>
 
           <div className="group" id="transaction-failed">
