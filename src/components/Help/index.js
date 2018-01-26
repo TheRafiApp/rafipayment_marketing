@@ -166,7 +166,7 @@ export default class Help extends Component {
             <p>If your rent is paid by someone you live with, they can simply
             set their rent split to 100% of the rent. If your rent is paid by a
             parent or someone else who doesn’t live with you, you should contact
-            customer support so we can make arrangements for them to pay for you.
+            customer support so we can make arrangements for them to pay on your behalf.
             </p>
 
           </div>
