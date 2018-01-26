@@ -7,7 +7,7 @@ services:
     environment:
       - NODE_ENV=production
     volumes:
-      - rafipayment_public_data:/app/
+      - rafipayment_public_data:/app/build/
     ports:
       - 3000:3000
     command: npm run build
