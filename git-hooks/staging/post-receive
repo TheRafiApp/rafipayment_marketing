@@ -7,4 +7,4 @@ from_commit, to_commit, ref = sys.stdin.read().strip("\n").split(" ")
 branch = ref.split("/")[2]
 
 print("Received branch {branch}, deploying!".format(branch=branch))
-subprocess.call(["deploy", "public", "-f"])
+subprocess.call(["deploy", "marketing", "-f"])

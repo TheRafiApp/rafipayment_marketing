@@ -33,7 +33,7 @@ class RequestForm extends React.Component {
       'email': this.state.value
     }
 
-    return new Request(window.location.protocol + '//' + window.location.hostname + ':3001/', {
+    return new Request(window.location.protocol + '//ms.' + window.location.hostname, {
       method: 'POST',
       body: data
     })

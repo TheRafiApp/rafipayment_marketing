@@ -11,4 +11,4 @@ if branch != "master":
 
 else:
     print("Received branch {branch}, deploying!".format(branch=branch))
-    subprocess.call(["deploy", "public", "-f"])
+    subprocess.call(["deploy", "marketing", "-f"])
