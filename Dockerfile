@@ -4,10 +4,13 @@ RUN apt-get update
 
 RUN apt-get -y install npm
 
-RUN mkdir -p /app
+RUN mkdir -p /app/build
 WORKDIR /app
 
 ADD package.json /app/
+
+# add apple/google verification files
+ADD verification/* /app/build/
 
 RUN npm install
 
