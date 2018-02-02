@@ -4,17 +4,16 @@ RUN apt-get update
 
 RUN apt-get -y install npm
 
-RUN mkdir -p /app/build
 WORKDIR /app
 
-ADD package.json /app/
+ADD package.json .
 
 # add apple/google verification files
-ADD verification/* /app/build/
+ADD verification/* ./build/
 
 RUN npm install
 
-ADD . /app
+ADD ./ ./
 
 EXPOSE 3000
 

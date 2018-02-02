@@ -10,7 +10,7 @@ services:
       - rafipayment_public_data:/app/build/
     ports:
       - 3000:3000
-    command: npm run build
+    command: ./build.sh
 
 volumes:
   rafipayment_public_data:
