@@ -39,7 +39,9 @@ export default class Privacy extends Component {
     return (
       <div className={classnames('Privacy', 'content', className)}>
         <div className="container">
-          <h1>Privacy Policy</h1>
+          <div className="header">
+            <h1>Privacy Policy</h1>
+          </div>
 
           {/* Begin privacy policy */}
 

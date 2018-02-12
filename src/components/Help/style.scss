@@ -1,6 +1,18 @@
 .Help {
   h3 {
     font-size: 1.6em;
+    background: #efefef;
+    padding: 16px;
+
+    // &:after {
+    //   content: '';
+    //   display: block;
+    //   max-width: 70px;
+    //   margin: 6px 0 14px;
+    //   padding-right: 30px;
+    //   padding-bottom: 6px;
+    //   border-bottom: 5px solid lightgrey;
+    // }
 
     a {
       display: none;
@@ -16,5 +28,9 @@
 
   p, ul {
     font-size: 1.1em;
+  }
+
+  .group {
+    margin-bottom: 40px;
   }
 }

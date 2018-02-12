@@ -37,10 +37,11 @@ export default class Help extends Component {
 
     return (
       <div className={classnames('Help', 'content', className)}>
+        <div className="header">
+          <h1>Frequently Asked Questions</h1>
+        </div>
         <div className="container medium">
-          <h1>Help</h1>
-
-          <h2 id="faq">FAQ</h2>
+          {/* <h2 id="faq">FAQ</h2> */}
 
           <div className="group" id="caniuse">
             <h3>Can I use Rafi Payment? <Link className="anchor-link" to="/help/#caniuse">#</Link></h3>
@@ -61,8 +62,8 @@ export default class Help extends Component {
           <div className="group" id="security">
             <h3>Is Rafi Payment secure? <Link className="anchor-link" to="/help/#security">#</Link></h3>
 
-            <p>We use <a href="https://en.wikipedia.org/wiki/Transport_Layer_Security" target="_blank" rel="noopener noreferrer">SSL</a> to protect your activity, all of your activity is
-            protected via encryption.</p>
+            <p>We use <a href="https://en.wikipedia.org/wiki/Transport_Layer_Security" target="_blank" rel="noopener noreferrer">SSL</a> (aka. https) to maintain your privacy, all of your activity is
+            protected via encryption. We also do not store your sensitive bank data on our servers.</p>
           </div>
 
           <div className="group" id="mobile-onboarding">
@@ -126,7 +127,7 @@ export default class Help extends Component {
           </div>
 
           <div className="group" id="maxattempts">
-            <h3>What do I do if I reach the maximum attempts for micro-deposit verification? <Link className="anchor-link" to="/help/#maxattempts">#</Link></h3>
+            <h3>What if I reach the maximum attempts for micro-deposit verification? <Link className="anchor-link" to="/help/#maxattempts">#</Link></h3>
 
             <p>Unfortunately, for security reasons this will increase the amount
             of time it will take to verify your account. You will need to follow
@@ -177,12 +178,13 @@ export default class Help extends Component {
             <p>We recommend setting up autopay when you activate your account. Your
             rent split amount will be automatically charged to the bank account
             you provided on the day your rent is due. You will be notified by
-            email 5 days before we charge you, and again after the transfer has
-            been created.
+            email 5 days before we charge you, at which point a scheduled transfer
+            will be created. You may cancel the scheduled transfer within that 5
+            day window, if you need to.
             </p>
 
             <p>If you would prefer not to use autopay, that’s fine too. You will
-            receive notifications to remind you to pay your rent.
+            receive notifications to remind you when rent is due.
             </p>
 
           </div>

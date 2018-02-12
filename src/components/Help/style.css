@@ -1,5 +1,7 @@
 .Help h3 {
-  font-size: 1.6em; }
+  font-size: 1.6em;
+  background: #efefef;
+  padding: 16px; }
   .Help h3 a {
     display: none;
     text-decoration: none; }
@@ -8,3 +10,6 @@
 
 .Help p, .Help ul {
   font-size: 1.1em; }
+
+.Help .group {
+  margin-bottom: 40px; }
